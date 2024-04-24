@@ -1,12 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html,
-.root {
-  height: 100%;
-  min-height: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 62.5%;
+
+@layer base {
+  body {
+    @apply text-base text-dark font-normal pb-20 leading-tight font-sora;
+  }
+}
+@layer components {
+  .l-container {
+    max-width: 1260px;
+    @apply mx-auto px-5;
+  }
+  .main-container {
+    max-width: 1210px;
+    @apply mx-auto px-5;
+  }
+  .text-gradient {
+    background: linear-gradient(90deg, #f961d8 20.98%, #1663f9 59.51%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main::before {
+    content: "";
+    box-shadow: 200px 180px 216px 180px rgba(133, 74, 235, 1),
+      0px 0px 216px 200px rgba(81, 180, 250, 1);
+    -webkit-box-shadow: 200px 180px 216px 180px rgba(133, 74, 235, 1),
+      0px 0px 216px 200px rgba(81, 180, 250, 1);
+    -moz-box-shadow: 200px 180px 216px 180px rgba(133, 74, 235, 1),
+      0px 0px 216px 200px rgba(81, 180, 250, 1);
+    position: absolute;
+    top: 400px;
+    width: 30%;
+    z-index: -100;
+  }
+  main::after {
+    content: "";
+    box-shadow: 0px 150px 216px 180px rgba(248, 166, 140, 1),
+      -200px 200px 216px 180px rgba(248, 217, 151, 1);
+    -webkit-box-shadow: 0px 150px 216px 180px rgba(248, 166, 140, 1),
+      -200px 200px 216px 180px rgba(248, 217, 151, 1);
+    -moz-box-shadow: 0px 150px 216px 180px rgba(248, 166, 140, 1),
+      -200px 200px 216px 180px rgba(248, 217, 151, 1);
+    position: absolute;
+    top: 400px;
+    right: 0;
+    width: 30%;
+    z-index: -100;
+  }
 }

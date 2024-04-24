@@ -1,5 +1,13 @@
-function App() {
-  return <h1 className="text-green-500 font-bold">Hello World</h1>;
-}
+import Development from "./pages/Development/Development";
+import Header from "./components/Header";
+
+const App = () => {
+  return (
+    <main className="gradient-blue">
+      <Header></Header>
+      <Development />
+    </main>
+  );
+};
 
 export default App;
