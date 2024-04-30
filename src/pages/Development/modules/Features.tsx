@@ -3,7 +3,7 @@ import Header2 from "../../../components/Header2";
 
 const Features = () => {
   return (
-    <section
+    <div
       className="
                 rounded-t-3xl
                 bg-white
@@ -45,7 +45,7 @@ const Features = () => {
             </div>
           ))}
       </div>
-    </section>
+    </div>
   );
 };
 

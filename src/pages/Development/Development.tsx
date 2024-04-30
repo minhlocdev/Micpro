@@ -1,4 +1,6 @@
 import ConentWrapper from "../../components/ContentWrapper";
+import Budget from "./modules/Budget";
+import Expertise from "./modules/Expertise";
 import Features from "./modules/Features";
 import Hero from "./modules/Hero";
 import Work from "./modules/Work";
@@ -10,6 +12,8 @@ const Development = () => {
         <Hero />
         <Features />
         <Work />
+        <Expertise />
+        <Budget />
       </ConentWrapper>
     </section>
   );
